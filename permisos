@@ -1,0 +1,4 @@
+sudo chown huan26 /var/www/ -R
+sudo chgrp huan26 /var/www/ -R
+sudo chmod 775 /var/www/ -R
+
