@@ -1,9 +1,9 @@
-##https://www.2daygeek.com/setup-nginx-server-blocks-virtual-hosts-in-linuxmint-ubuntu-debian/
+#https://www.2daygeek.com/setup-nginx-server-blocks-virtual-hosts-in-linuxmint-ubuntu-debian/
 
-###https://www.interserver.net/tips/kb/create-manage-virtual-hosts-nginx/
+#https://www.interserver.net/tips/kb/create-manage-virtual-hosts-nginx/
 
 #Easy to configure compare with IP based
-#Good for shared & reseller hosting environment
+##Good for shared & reseller hosting environment
 
 #1a) Create Server Blocks (Virtual Hosts) #
 sudo mkdir -p /var/www/support.2daygeek.com/public_html
