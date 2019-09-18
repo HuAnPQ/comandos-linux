@@ -24,3 +24,13 @@ git commit -m "Comentarios de los cambios"
 git push
 ~~~
 
+**Etiquetado de versiones**
+
+~~~console
+git tag -a v1.0 -m "Version 1.0 - Primeros comandos"
+git tag -a v1.1 -m "Version 1.1 - Comandos Version y Ramas"
+git tag -n 
+git push --tags
+~~~
+
+
