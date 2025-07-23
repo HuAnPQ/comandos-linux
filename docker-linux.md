@@ -25,3 +25,19 @@ sudo apt install docker-ce docker-ce-cli containerd.io
 ## Agregar nuestro usuario al grupo Docker
 
 sudo usermod -aG docker $USER
+
+## Configurar Dockerd
+
+DOCKER_DIR=/mnt/wsl/shared-docker
+
+mkdir -pm o=,ug=rwx "$DOCKER_DIR"
+
+sudo chgrp docker "$DOCKER_DIR"
+
+sudo mkdir /etc/docker
+
+sudo vim /etc/docker/daemon.json
+
+{
+"hosts": ["unix:///mnt/wsl/shared-docker/docker.sock"]
+}
