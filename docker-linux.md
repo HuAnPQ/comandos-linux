@@ -60,3 +60,12 @@ if [ ! -S "$DOCKER_SOCK" ]; then
  /mnt/c/Windows/System32/wsl.exe -d $DOCKER_DISTRO sh -c "nohup sudo -b dockerd < /dev/null > $DOCKER_DIR/dockerd.log 2>&1"
 fi
 ~~~
+
+## Agregar nuestro usuario en sudoers
+
+~~~bash
+sudo visudo
+%docker ALL=(ALL) NOPASSWD: /usr/bin/dockerd
+ubuntu ALL=(ALL) NOPASSWD: /usr/bin/dockerd
+ubuntu ALL=(ALL) NOPASSWD: /usr/bin/chgrp
+~~~
