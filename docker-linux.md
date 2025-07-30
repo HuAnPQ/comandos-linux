@@ -69,3 +69,11 @@ sudo visudo
 ubuntu ALL=(ALL) NOPASSWD: /usr/bin/dockerd
 ubuntu ALL=(ALL) NOPASSWD: /usr/bin/chgrp
 ~~~
+
+## Lista de contenedores
+
+docker ps -a
+
+## Mostrar informacion sobre docker
+
+docker info
