@@ -71,9 +71,24 @@ ubuntu ALL=(ALL) NOPASSWD: /usr/bin/chgrp
 ~~~
 
 ## Lista de contenedores
+-a lista de los contenedores en ejecución y de los que han finalizado.
 
-docker ps -a
+-s muestra el tamaño en disco y el tamaño virtual de cada contenedor.
+
+docker ps -as
 
 ## Mostrar informacion sobre docker
 
 docker info
+
+## Elimina redes, contenedores, imágenes o volúmenes no utilizados
+
+docker system prune
+
+## Mostrar los detalles del contexto por defecto 
+
+docker context ls
+
+## Mostrar un ejemplo de la salida de la consulta posgresql
+
+docker search --filter is-official=true --filter stars=500 posgresql
