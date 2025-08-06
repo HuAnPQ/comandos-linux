@@ -92,3 +92,11 @@ docker context ls
 ## Mostrar un ejemplo de la salida de la consulta posgresql
 
 docker search --filter is-official=true --filter stars=500 posgresql
+
+## Administrar imagenes docker
+
+docker image ls
+
+## Crear una red puente
+
+docker network create -d bridge my-bridge-network
